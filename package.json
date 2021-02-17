@@ -36,6 +36,15 @@
     "plugins": [
       "vue"
     ],
-    "rules": {}
+    "rules": {
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "./vite.config.js"
+                ]
+            }
+        ]
+    }
   }
 }
